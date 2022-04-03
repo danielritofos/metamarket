@@ -237,6 +237,8 @@ a{
 	padding-top: 120px;
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
+	height: 240px;
 }
 .withtower ol li::after{
 	position: absolute;
@@ -610,5 +612,10 @@ footer .column:nth-child(3){
 	.finish .card{
 		width: 100%;
 		margin: 6px;
+	}
+}
+@media screen and (max-width: 576px){
+	.withtower ol{
+		fdc
 	}
 }
