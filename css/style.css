@@ -240,7 +240,7 @@ a{
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	height: 240px;
+	height: calc(100% + 120px);
 }
 .withtower ol li::after{
 	position: absolute;
