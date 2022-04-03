@@ -626,4 +626,7 @@ footer .column:nth-child(3){
 	.withtower h2 span, .welcome h2 span{
 		font-size: 36px;
 	}
+	section:not(.first){
+		padding: 40px 0;
+	}
 }
