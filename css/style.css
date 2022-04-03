@@ -615,7 +615,10 @@ footer .column:nth-child(3){
 	}
 }
 @media screen and (max-width: 576px){
-	.withtower ol{
-		fdc
+	h2{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 20px;
 	}
 }
