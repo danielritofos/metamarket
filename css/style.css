@@ -623,7 +623,7 @@ footer .column:nth-child(3){
 	h3{
 		font-size: 20px;
 	}
-	h2 span{
+	.withtower h2 span, .welcome h2 span{
 		font-size: 36px;
 	}
 }
