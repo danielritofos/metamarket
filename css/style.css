@@ -240,7 +240,6 @@ a{
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
-	height: calc(100% + 120px);
 }
 .withtower ol li::after{
 	position: absolute;
@@ -628,5 +627,8 @@ footer .column:nth-child(3){
 	}
 	section:not(.first){
 		padding: 40px 0;
+	}
+	.withtower ol{
+		width: 100%;
 	}
 }
