@@ -86,7 +86,7 @@ h2{
 h2 span{
 	font-size: 72px;
 	font-style: normal;
-	font-family: 'Gamero', sans-serif;
+	font-family: "Gamero", sans-serif;
 }
 .description{
 	font-size: 24px;
@@ -181,12 +181,20 @@ h2 span{
 .withtower.estate::after{
 	background-image: url("../img/tower4.png");
 }
-.withtower.launch li{
+.withtower.school::after{
+	background-image: url("../img/tower5.png");
+}
+.withtower ol li{
 	list-style-type: none;
 	position: relative;
 	padding-left: 36px;
+	display: inline-block;
+	text-align: right;
 }
-.withtower.launch li::before{
+.withtower.school ol li{
+	text-align: left;
+}
+.withtower ol li::before{
 	font-size: 72px;
 	font-family: "Gamero";
 	position: absolute;
@@ -201,26 +209,35 @@ h2 span{
 	background-clip: text;
 	text-fill-color: transparent;
 }
-.withtower.launch li:nth-child(1n)::before{
+.withtower ol li:nth-child(1n)::before{
 	content: "01";
 }
-.withtower.launch li:nth-child(2n)::before{
+.withtower ol li:nth-child(2n)::before{
 	content: "02";
 }
-.withtower.launch li:nth-child(3n)::before{
+.withtower ol li:nth-child(3n)::before{
 	content: "03";
 }
-.withtower.launch ol{
+.withtower.school ol li::before{
+	content: url("../img/check.svg");
+	left: 0;
+	z-index: 1;
+}
+.withtower ol{
 	padding-top: 120px;
 	display: flex;
 	justify-content: flex-end;
 }
-.withtower.launch li::after{
+.withtower ol li::after{
 	position: absolute;
 	right: 48px;
 	top: -40px;
 	height: 36px;
 	width: 36px;
+}
+.withtower.school ol li::after{
+	left: 18px;
+	z-index: 0;
 }
 .withtower.launch li:nth-child(1)::after{
 	content: url("../img/li1.svg");
@@ -231,11 +248,20 @@ h2 span{
 .withtower.launch li:nth-child(3)::after{
 	content: url("../img/li3.svg");
 }
-.withtower.launch.estate li:nth-child(1)::after{
+.withtower.estate li:nth-child(1)::after{
 	content: url("../img/11.svg");
 }
-.withtower.launch.estate li:nth-child(2)::after{
+.withtower.estate li:nth-child(2)::after{
 	content: url("../img/12.svg");
+}
+.withtower.school ol li:nth-child(1)::after{
+	content: url("../img/21.svg");
+}
+.withtower.school ol li:nth-child(2)::after{
+	content: url("../img/22.svg");
+}
+.withtower.school ol li:nth-child(3)::after{
+	content: url("../img/23.svg");
 }
 .withtower.advantages .description{
 	margin-bottom: 60px;
@@ -265,4 +291,34 @@ h2 span{
 	content: '⮚';
 	font-size: 72px;
 	height: 136px;
+}
+.withtower.school ol{
+	justify-content: flex-start;
+}
+.welcome.withgraphic{
+	position: relative;
+}
+.welcome.withgraphic::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	background-image: url("../img/withgraphic.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.welcome.withgraphic .window{
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
+}
+.welcome.withgraphic ul{
+	width: 640px;
+	list-style: url("../img/marker.svg");
+	list-style-position: outside;
+	margin-top: 60px;
+}
+.welcome.withgraphic ul li{
+	margin-top: 24px;
 }
