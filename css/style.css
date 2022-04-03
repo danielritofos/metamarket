@@ -71,6 +71,8 @@ body{
 }
 .first a:last-child{
 	border: none;
+	display: flex;
+	align-items: center;
 }
 .first a img{
 	margin-right: 14px;
